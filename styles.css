@@ -1,57 +1,76 @@
+.nav__toggler {
+  height: 50px;
+  width: 50px;
+  fill: #E5E5E5;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.nav-bar {
-  background-color: #CC3355;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.nav-bar .nav-bar__header {
-  font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
-  padding: 10px;
-  font-weight: 500;
-}
-.nav-bar .nav-bar__header__bold {
-  font-weight: 800;
-  font-size: 2rem;
-}
-.nav-bar .nav-bar__menu {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.nav-bar .nav-bar__menu a {
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  margin: 0 10px;
-}
-.nav-bar label {
-  font-size: 35px;
-  color: #E5E5E5;
-  cursor: pointer;
-}
-.nav-bar .toggle {
-  display: none;
-}
-
 body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: #E5E5E5;
 }
 
-.footer {
+.nav {
   background-color: #CC3355;
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.nav .nav__header {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+.nav .nav-header__bold {
+  font-weight: 800;
+  font-size: 2.3rem;
+}
+.nav .nav__list {
+  width: 100%;
+  margin-top: 1rem;
+}
+.nav .nav__item {
+  padding: 0.5 2rem;
+  font-size: 2rem;
+  border-bottom: 1px solid;
+}
+.nav .nav__item > a {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  padding-left: 1rem;
+  font-weight: 800;
+}
+.nav .nav__toggler:hover {
+  fill: #FFFFFF;
+  cursor: pointer;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav__toggler {
+    display: hidden;
+  }
+
+  body {
+    background-color: red;
+  }
 }

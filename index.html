@@ -20,21 +20,21 @@
 
 <body>
 
-    <nav class="nav-bar">
-        <h2 class="nav-bar__header">Built By
-            <span class="nav-bar__header__bold">Abz.</span>
-        </h2>
-        <div class="nav-bar__menu">
-            <a href="">About</a>
-            <a href="">Work</a>
-            <a href="">Skills</a>
-            <a href="">Contact</a>
-        </div>
-        <div class="nav-bar__hamburger">
-            <label for="toggle">&#9776;</label>
-            <input type="checkbox" id="toggle">
-        </div>   
+    <nav class="nav collapsible collapsible--expanded">
+        <a class="nav__header" href="/">Built By <span class="nav-header__bold">Abz.</span></a>
+        </svg><svg class="nav__toggler">
+            <use xlink:href="assets/images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="nav__list collapsible__content">
+            <li class="nav__item"><a href="">About</a></li>
+            <li class="nav__item"><a href="">Work</a></li>
+            <li class="nav__item"><a href="">Skills</a></li>
+            <li class="nav__item"><a href="">Contact</a></li>
+        </ul>
     </nav>
+
+
+
 
 
 
@@ -42,7 +42,7 @@
     <footer class="footer">
 
     </footer>
-
+    <script src="dist/main.dev.js"></script>
 </body>
 
 </html>
