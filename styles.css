@@ -1,76 +1,213 @@
-.nav__toggler {
-  height: 50px;
-  width: 50px;
-  fill: #E5E5E5;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 12px;
 }
 
 body {
-  background-color: #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F8F8F8;
+  height: 100vh;
 }
 
-.nav {
-  background-color: #CC3355;
+/* Navbar */
+.navbar {
+  background: #CC3355;
+  width: 100%;
+}
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+.navbar .nav-header {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem;
+  align-items: center;
+  color: white;
+  font-size: 1.35rem;
 }
-.nav .nav__header {
-  font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
+
+.flex-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: white;
   text-decoration: none;
-  font-size: 1.7rem;
 }
-.nav .nav-header__bold {
+
+.nav-link {
+  list-style: none;
+  margin: 20px 0;
+  /*added*/
+  margin-bottom: 5rem;
+  border-bottom: 2px solid white;
+  width: 8rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
   font-weight: 800;
-  font-size: 2.3rem;
+  font-size: 1.4rem;
 }
-.nav .nav__list {
-  width: 100%;
-  margin-top: 1rem;
+
+.nav-header span {
+  font-weight: 400;
+  font-size: 1.4rem;
 }
-.nav .nav__item {
-  padding: 0.5 2rem;
-  font-size: 2rem;
-  border-bottom: 1px solid;
-}
-.nav .nav__item > a {
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-  list-style-type: none;
-  text-decoration: none;
-  padding-left: 1rem;
-  font-weight: 800;
-}
-.nav .nav__toggler:hover {
-  fill: #FFFFFF;
+
+.nav-toggle {
+  border: transparent;
+  background: transparent;
+  color: #F8F8F8;
+  font-size: 1.9rem;
   cursor: pointer;
 }
 
-.collapsible__content {
-  max-height: 0;
+.nav-toggle:hover {
+  color: white;
+}
+
+.nav-links {
+  /*added
+
+    margin-top: 50px;
+    */
+  height: 0;
+  /* added flex and justify*/
   overflow: hidden;
-  transition: all 0.3s;
-  opacity: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.collapsible--expanded .collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
+.nav-open {
+  height: 100vh;
 }
 
-@media only screen and (min-width: 600px) {
-  .nav__toggler {
-    display: hidden;
+.hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero .hero__container {
+  width: 90%;
+  height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .hero__container .hero__info .hero__title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero .hero__container .hero__info #hero__title__red {
+  color: #CC3355;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.hero .hero__container .hero__info p {
+  font-size: 1.2rem;
+  max-width: 60%;
+}
+
+.hero .hero__container .hero__info #hero__work {
+  letter-spacing: 0.1rem;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  background-color: #CC3355;
+  color: white;
+  padding: 1rem;
+  display: block;
+  max-width: 30%;
+  text-align: center;
+  font-weight: 800;
+}
+
+.footer {
+  background-color: #CC3355;
+  height: 100px;
+  color: white;
+}
+
+.footer .link-container {
+  height: 100%;
+  margin-left: 1.5rem;
+}
+
+.footer .link-container .footer__title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.footer .link-container .fab {
+  font-size: 1.5rem;
+  letter-spacing: 12px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+#hero__work:hover {
+  opacity: 0.5;
+}
+
+/** DESKTOP **/
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 18px;
   }
 
-  body {
-    background-color: red;
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-header {
+    display: block;
+  }
+
+  .flex-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+  }
+
+  .nav-links {
+    height: auto;
+    margin-top: 0;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  .nav-link {
+    display: inline-block;
+    border-bottom: none;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .nav-links span {
+    background: #464646;
+    padding: 8px 15px;
+    border-radius: 4px;
   }
 }

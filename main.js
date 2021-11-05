@@ -1,6 +1,8 @@
-const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((item) =>
-  item.addEventListener("click", function () {
-    this.classList.toggle("collapsible--expanded");
-  })
-);
+// nav toggle - select button and links
+const navToggle = document.querySelector("#navToggle")
+const nav = document.querySelector("#nav-links")
+
+// add event listener
+navToggle.addEventListener("click", () => {
+    nav.classList.toggle('nav-open')
+})
