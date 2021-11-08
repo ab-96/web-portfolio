@@ -1,5 +1,9 @@
 @import "_variables.scss";
 @import "assets/styles/_typography.scss";
+@import "_skills.scss";
+@import "_work.scss";
+@import "contact.scss";
+
 
 * {
     margin: 0;
@@ -10,14 +14,19 @@
 
 html {
     font-size: 12px;
+    
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: $terniary-color;
+    width: 100vw;
     height: 100vh;
+    
+
+}
+
+#home-section {
+    height: 100%;
+    background-color: $terniary-color;
 }
 
 /* Navbar */
@@ -25,21 +34,23 @@ body {
     background: $primary-color;
     width: 100%;
 
-    .container {
+    .navbar__container {
         max-width: 1100px;
         margin: 0 auto;
         padding: 20px 40px;
+
+
     }
 
 
-        .nav-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            font-size: 1.35rem;
-        }
-    
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-size: 1.35rem;
+    }
+
 }
 
 
@@ -69,7 +80,8 @@ a {
 
 .nav-link:hover {
     font-weight: 800;
-    font-size: 1.4rem;
+
+
 }
 
 
@@ -81,6 +93,7 @@ a {
 
 
 .nav-toggle {
+    margin-top: 10px;
     border: transparent;
     background: transparent;
     color: #F8F8F8;
@@ -106,125 +119,214 @@ a {
 
 .nav-open {
     height: 100vh;
+
+    /** styling below covers the whole page for mobile vie menu**/
+
+    position: absolute;
+    background-color: $secondary-color;
+    width: 100%;
+    top: 9.5%;
+    left: 0;
+
 }
 
 .hero {
     width: 100%;
     height: 100vh;
+
+
+    .hero__container {
+        width: 90%;
+        height: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
 }
 
-.hero .hero__container {
-    width: 90%;
-    height: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.hero .hero__container .hero__info .hero__title {
-    font-size: 4rem;
+.hero__title {
     margin-bottom: 1rem;
+    font-size: 4rem;
+    color: $secondary-color;
 }
 
-.hero .hero__container .hero__info #hero__title__red {
+
+
+#red-hero {
+    color: $primary-color;
+}
+
+.hero--second {
+    font-size: 2.5rem;
+
+
+
+}
+
+/*#red-name {
     color: $primary-color;
     font-weight: 800;
     font-size: 1.3rem;
+}*/
+
+.hero__info>p {
+    font-size: 1.1rem;
+
+
 }
 
-.hero .hero__container .hero__info p {
-    font-size: 1.2rem;
-    max-width: 60%;
-}
-
-.hero .hero__container .hero__info #hero__work {
+.hero__work {
     letter-spacing: 0.1rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     text-transform: uppercase;
     background-color: $primary-color;
     color: white;
     padding: 1rem;
     display: block;
-    max-width: 30%;
+    max-width: 50%;
     text-align: center;
     font-weight: 800;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
 }
 
 .footer {
-    background-color: $primary-color;
+    background-color: none;
     height: 100px;
     color: white;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.footer .link-container {
+.footer__title {
+    margin-right: 1rem;
+}
+
+.footer-container {
     height: 100%;
-    margin-left: 1.5rem;
+    display: flex;
+    justify-content: center;
+    background-color: $primary-color;
+    width: 230.2px;
+    margin-right: 200px;
+    
+
+    .fab {
+        font-size: 1.5rem;
+        cursor: pointer;
+           }
+
 }
 
-.footer .link-container .footer__title {
+
+
+
+.footer__title {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1em;
     cursor: pointer;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
 }
 
-.footer .link-container .fab {
-    font-size: 1.5rem;
-    letter-spacing: 12px;
-    cursor: pointer;
-    margin-bottom: 1rem;
-}
-
-#hero__work:hover {
-
-    opacity: 0.5;
-
-}
 
 /** DESKTOP **/
 @media only screen and (min-width: 900px) {
 
     html {
         font-size: 18px;
+
+    }
+
+  
+
+    .navbar {
+        background: transparent;
+    }
+
+
+
+    .nav-header {
+        background-color: $primary-color;
+        height: 100%;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+    }
+
+    .navbar__container {
+        padding: 0 40px !important;
+
+
+    }
+
+    .nav-header>h2 {
+        color: whitesmoke;
+        padding: 20px;
+
+
     }
 
 
     .nav-toggle {
-      display: none;
+        display: none;
     }
-  
+
     .nav-header {
-      display: block;
+        display: block;
     }
-  
+
     .flex-nav {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
     }
-  
+
     .nav-links {
-      height: auto;
-      margin-top: 0;
+        height: auto;
+        margin-top: 0;
+
+        /* styling below added to aid above styling*/
+        position: absolute;
+        right: 0;
     }
-  
+
     ul {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .nav-link {
-      display: inline-block;
-      border-bottom: none;
-      margin-bottom: 0;
-      margin-top: 0;
+        display: inline-block;
+        border-bottom: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-size: 1rem;
+
+        a {
+            color: $secondary-color;
+        }
+
+        &:hover {
+            a {
+                color: $primary-color;
+                font-weight: 400;
+
+            }
+        }
     }
-  
-    .nav-links span {
-      background: rgb(70, 70, 70);
-      padding: 8px 15px;
-      border-radius: 4px;
-    }
-  }
+
+
+
+
+}

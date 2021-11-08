@@ -2,41 +2,34 @@
 @import "assets/styles/_typography.scss";
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $primary-font;
-}
-
-html {
-    font-size: 12px;
-}
-
-body {
+#contact-section {
+    scroll-snap-align: start;
     background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100vw;
     height: 100vh;
 
 }
 
-.header {
-    margin-top: 1rem;
+.contact-header {
+    margin-top: 5rem;
+    margin-left: 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 2rem;
     color: whitesmoke;
     text-transform: uppercase;
 }
 
-.header__title {
+.contact-header__title{
     text-align: center;
 }
 
 
 .contact-paragraph {
+    max-width: 1100px;
     padding: 3rem;
     color: white;
     font-size: 1.4rem;
@@ -55,7 +48,7 @@ body {
     height: 150px;
     color: white;
 
-    .link-container {
+    .footer-container {
         height: 100%;
         margin-left: 1.5rem;
         display: flex;
@@ -90,14 +83,5 @@ body {
     html {
         font-size: 18px
     }
-
-    body {
-        height: 100vh;
-        
-    }
-
-
-
-
 
 }
