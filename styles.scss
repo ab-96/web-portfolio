@@ -19,13 +19,12 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    
-
 }
 
 #home-section {
     height: 100%;
-    background-color: $terniary-color;
+    //background-color: $terniary-color;
+
 }
 
 /* Navbar */
@@ -37,10 +36,7 @@ body {
         max-width: 1100px;
         margin: 0 auto;
         padding: 20px 40px;
-
-
     }
-
 
     .nav-header {
         display: flex;
@@ -49,10 +45,7 @@ body {
         color: white;
         font-size: 1.35rem;
     }
-
 }
-
-
 
 .flex-nav {
     display: flex;
@@ -97,26 +90,15 @@ a {
 }
 
 .nav-links {
-    /*added
-  
-      margin-top: 50px;
-      */
     height: 0;
-    /* added flex and justify*/
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
 
 .nav-open {
-    
     height: 100%;
-    /* position: absolute; */
-    /* background-color: #333333; */
     width: 100%;
-    /* top: 9.5%; */
-    /* left: 0; */
-
 }
 
 .hero {
@@ -132,7 +114,6 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-
     }
 }
 
@@ -151,20 +132,11 @@ a {
 
 .hero--second {
     font-size: 2.5rem;
-
-
-
 }
 
-/*#red-name {
-    color: $primary-color;
-    font-weight: 800;
-    font-size: 1.3rem;
-}*/
 
-.hero__info>p {
+.hero__info > p {
     font-size: 1.1rem;
-
 
 }
 
@@ -211,7 +183,6 @@ a {
         font-size: 1.5rem;
         cursor: pointer;
            }
-
 }
 
 
@@ -232,16 +203,11 @@ a {
 
     html {
         font-size: 18px;
-
     }
-
-  
 
     .navbar {
         background: transparent;
     }
-
-
 
     .nav-header {
         background-color: $primary-color;
@@ -250,20 +216,15 @@ a {
         &:hover {
             opacity: 0.8;
         }
-
     }
 
     .navbar__container {
         padding: 0 40px !important;
-
-
     }
 
     .nav-header>h2 {
         color: whitesmoke;
         padding: 20px;
-
-
     }
 
 
@@ -285,8 +246,6 @@ a {
     .nav-links {
         height: auto;
         margin-top: 0;
-
-        /* styling below added to aid above styling*/
         position: absolute;
         right: 0;
     }
@@ -314,8 +273,5 @@ a {
             }
         }
     }
-
-
-
 
 }

@@ -1,0 +1,23 @@
+{
+  "name": "web-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch-scss": "sass --watch styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ab-96/web-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ab-96/web-portfolio/issues"
+  },
+  "homepage": "https://github.com/ab-96/web-portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.43.5"
+  }
+}

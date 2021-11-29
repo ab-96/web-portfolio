@@ -40,6 +40,7 @@
 .email {
     font-weight: 800;
     color:  $primary-color;
+    cursor: pointer;
 }
 
 .footer {
@@ -71,9 +72,6 @@
         margin-bottom: 1rem;
     }
 
-    .footer__logo {
-        
-    }
 
 }
 

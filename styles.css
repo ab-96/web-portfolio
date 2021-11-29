@@ -59,10 +59,6 @@
   background-color: #333333;
   width: 100vw;
   height: 150vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header-work {
@@ -71,11 +67,23 @@
   justify-content: center;
   font-size: 1.8rem;
   color: whitesmoke;
+  margin-bottom: 20px;
 }
 
 .title--work {
   margin-top: 3rem;
   text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+.grid-container .grid-item {
+  border: 1px solid red;
 }
 
 #contact-section {
@@ -114,6 +122,7 @@
 .email {
   font-weight: 800;
   color: #CC3355;
+  cursor: pointer;
 }
 
 .footer {
@@ -141,6 +150,7 @@
   cursor: pointer;
   margin-bottom: 1rem;
 }
+
 @media only screen and (min-width: 900px) {
   html {
     font-size: 18px;
@@ -164,7 +174,6 @@ body {
 
 #home-section {
   height: 100%;
-  background-color: #F8F8F8;
 }
 
 /* Navbar */
@@ -225,12 +234,7 @@ a {
 }
 
 .nav-links {
-  /*added
-
-    margin-top: 50px;
-    */
   height: 0;
-  /* added flex and justify*/
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -238,11 +242,7 @@ a {
 
 .nav-open {
   height: 100%;
-  /* position: absolute; */
-  /* background-color: #333333; */
   width: 100%;
-  /* top: 9.5%; */
-  /* left: 0; */
 }
 
 .hero {
@@ -273,11 +273,6 @@ a {
   font-size: 2.5rem;
 }
 
-/*#red-name {
-    color: $primary-color;
-    font-weight: 800;
-    font-size: 1.3rem;
-}*/
 .hero__info > p {
   font-size: 1.1rem;
 }
@@ -377,7 +372,6 @@ a {
   .nav-links {
     height: auto;
     margin-top: 0;
-    /* styling below added to aid above styling*/
     position: absolute;
     right: 0;
   }
@@ -401,3 +395,5 @@ a {
     font-weight: 400;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
