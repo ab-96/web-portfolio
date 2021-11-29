@@ -4,7 +4,6 @@
 @import "_work.scss";
 @import "contact.scss";
 
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,7 @@ body {
 
 #home-section {
     height: 100%;
-    //background-color: $terniary-color;
+    background-color: $terniary-color;
 
 }
 
@@ -158,44 +157,7 @@ a {
 
 }
 
-.footer {
-    background-color: none;
-    height: 100px;
-    color: white;
-    display: flex;
-    justify-content: flex-end;
-}
 
-.footer__title {
-    margin-right: 1rem;
-}
-
-.footer-container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: $primary-color;
-    width: 230.2px;
-    margin-right: 200px;
-    
-
-    .fab {
-        font-size: 1.5rem;
-        cursor: pointer;
-           }
-}
-
-
-
-
-.footer__title {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1em;
-    cursor: pointer;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-}
 
 
 /** DESKTOP **/
