@@ -60,9 +60,7 @@ a {
 .nav-link {
     list-style: none;
     margin: 20px 0;
-    /*added*/
     margin-bottom: 5rem;
-    //border-bottom: 2px solid white;
     width: 8rem;
     font-size: 1.5rem;
     text-align: center;
@@ -143,8 +141,9 @@ a {
     letter-spacing: 0.1rem;
     margin-top: 3rem;
     text-transform: uppercase;
-    background-color: $primary-color;
-    color: white;
+    //background-color: $primary-color;
+    border: 2px solid $primary-color;
+    color: $primary-color;
     padding: 1rem;
     display: block;
     max-width: 50%;
@@ -152,7 +151,10 @@ a {
     font-weight: 800;
 
     &:hover {
-        opacity: 0.8;
+        //opacity: 0.8;
+        background-color: $primary-color;
+        border: none;
+        color: white;
     }
 
 }
