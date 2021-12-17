@@ -21,7 +21,8 @@ body {
 }
 
 #home-section {
-    height: 100%;
+    // height: 100%;
+    
     background-color: $terniary-color;
 
 }
@@ -30,6 +31,10 @@ body {
 .navbar {
     background: $primary-color;
     width: 100%;
+
+
+
+  
 
     .navbar__container {
         max-width: 1100px;
@@ -95,21 +100,22 @@ a {
 
 .nav-open {
     height: 100%;
-    width: 100%;
+    width: 100%;   
 }
 
 .hero {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
 
 
     .hero__container {
         width: 90%;
-        height: 100%;
+        // height: 100%;
         max-width: 900px;
         margin: 0 auto;
         display: flex;
         align-items: center;
+        padding: 100px 0;
         justify-content: center;
     }
 }
@@ -132,7 +138,7 @@ a {
 }
 
 
-.hero__info > p {
+.hero__info>p {
     font-size: 1.1rem;
 
 }
@@ -153,7 +159,7 @@ a {
     &:hover {
         //opacity: 0.8;
         background-color: $primary-color;
-        border: none;
+        border: 2px solid $primary-color;
         color: white;
     }
 
@@ -239,3 +245,32 @@ a {
     }
 
 }
+
+
+// .project__content {
+//     height: 200px;
+//     width: 200px;
+//     background-image: //your image
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     div {
+//         padding: 20px;
+//         display: flex;
+//         flex-direction: column;
+
+//         h3 {
+
+//         }
+
+//         div {
+//             padding: 20px;
+//             background-color: grey;
+//             opacity: 0.7;
+
+//             p {
+//                 font-size: 
+//             }
+//         }
+//     }
+// }

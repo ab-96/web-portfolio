@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ab-96/web-portfolio#readme",
   "devDependencies": {
     "sass": "^1.43.5"
+  },
+  "dependencies": {
+   
   }
 }
