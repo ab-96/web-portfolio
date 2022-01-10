@@ -16,6 +16,7 @@
 .contact-header {
     margin-top: 5rem;
     margin-left: 2rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: flex-start;
     color: whitesmoke;
@@ -25,7 +26,7 @@
 .contact-header__title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 
@@ -87,7 +88,7 @@
             }
 
             .fab {
-                font-size: 2rem;
+                font-size: 1.5rem;
                 cursor: pointer;
                 border-radius: 2px;
                 background-color: whitesmoke;
