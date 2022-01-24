@@ -9,7 +9,6 @@
   justify-content: center;
   display: flex;
   justify-content: center;
-  font-size: 1.8rem;
   color: whitesmoke;
   text-transform: uppercase;
 }
@@ -17,7 +16,7 @@
 .title--skills {
   margin-top: 3rem;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .skills-paragraph {
@@ -76,13 +75,13 @@
 
 .title--work {
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: white;
 }
 
 .featured {
-  width: 450px;
+  width: 340px;
   margin-bottom: 10px;
   margin-top: 20px;
 }
@@ -95,15 +94,15 @@
 .project__content {
   position: relative;
   padding: 30px;
-  height: 100%;
-  width: 450px;
+  height: 250px;
+  width: 340px;
   background-image: url("assets/images/calc.png");
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .project h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
   padding-bottom: 10px;
 }
@@ -114,14 +113,14 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
   background-color: #FFFFFF;
-  height: 200px;
+  height: 100%;
   opacity: 0.7;
   margin-bottom: 10px;
 }
 .project .text-container p {
   color: black;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.8rem;
 }
 .project button {
@@ -137,7 +136,7 @@
   text-transform: uppercase;
   position: absolute;
   right: 0;
-  bottom: 80px;
+  bottom: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .project__techStack {
@@ -174,7 +173,7 @@
 .contact-header__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .contact-paragraph {
@@ -338,6 +337,7 @@ a {
 }
 
 .hero {
+  height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
@@ -352,9 +352,14 @@ a {
 }
 
 .hero__title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 4rem;
   color: black;
+}
+
+#red5 {
+  color: #CC3355;
+  font-weight: 500;
 }
 
 #red-hero {
@@ -362,26 +367,30 @@ a {
 }
 
 .hero__second {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #000500;
   margin-bottom: 1rem;
 }
 
-.vertical p {
+.hero_info {
   font-size: 1.3rem;
   line-height: 1.5;
   color: black;
 }
 
+.text1 {
+  font-size: 1.5rem;
+}
+
 .hero__work {
   letter-spacing: 0.1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
+  display: inline-block;
   text-transform: uppercase;
   border: 2px solid #CC3355;
   color: #FFFFFF;
-  padding: 1rem;
-  display: block;
-  width: 250px;
+  padding: 1.1rem;
+  width: 220px;
   text-align: center;
   font-weight: 800;
   font-size: 1rem;
