@@ -14,9 +14,8 @@
 }
 
 .contact-header {
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 2rem;
-    margin-bottom: 2rem;
     display: flex;
     justify-content: flex-start;
     color: whitesmoke;
@@ -24,9 +23,8 @@
 }
 
 .contact-header__title {
-    text-align: center;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 
@@ -65,14 +63,11 @@
         .footer__logo {
             font-size: 1.4rem;
             margin-left: 1.7rem;
-
         }
 
         .footer__logo>span {
             font-weight: 400;
             font-size: 1.1rem;
-
-
         }
 
 
@@ -83,8 +78,7 @@
 
             .footer__title {
                 font-size: 1.1rem;
-                font-weight: 500;
-                
+                font-weight: 500;   
             }
 
             .fab {
@@ -94,7 +88,6 @@
                 background-color: whitesmoke;
                 padding: 8px;
                 color: black;
-                //border: 1px solid #521422;
 
                 &:hover {
                     color: $primary-color;
