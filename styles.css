@@ -58,7 +58,6 @@
 #section-work {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #333333;
   width: 100vw;
   min-height: 100%;
@@ -73,16 +72,20 @@
 }
 
 .title--work {
-  padding-left: 38px;
+  padding-left: 30px;
   margin-top: 3rem;
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
 }
 
+.projects {
+  display: none;
+}
+
 .featured {
   width: 300px;
-  margin-bottom: 10px;
+  margin-left: 2.4rem;
   margin-top: 20px;
 }
 .featured h6 {
@@ -91,28 +94,53 @@
   font-size: 1.2rem;
 }
 
+.project {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+}
 .project__content {
   position: relative;
   display: flex;
-  align-items: center;
-  padding: 30px;
-  height: 270px;
-  width: 300px;
-  background: url("assets/images/calc.png") no-repeat center;
-  background-size: cover;
+  min-height: 270px;
+  min-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
+.project__content:hover .project__content__title {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.project__content:hover .text-container {
+  background-color: white;
+  padding: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.project__content:hover .text-container p {
+  color: black;
+}
+.project__content > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
 .project__content__title {
+  left: 30px;
+  margin-top: 20px;
+  margin-right: 100px;
   font-size: 2rem;
   color: white;
-  padding-bottom: 10px;
-  z-index: 2;
+  z-index: 1;
   position: relative;
 }
 .project__content::before {
   content: "";
   background: rgba(204, 50, 85, 0.8);
   position: absolute;
+  z-index: 1;
   left: 0;
   right: 0;
   top: 0;
@@ -122,6 +150,9 @@
   display: none;
 }
 .project .text-container {
+  padding: 30px;
+  position: absolute;
+  z-index: 2;
   width: fit-content;
   opacity: 0.9;
   margin-bottom: 10px;
@@ -147,9 +178,18 @@
   bottom: 30px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   border-radius: 3px;
+  position: absolute;
+  z-index: 2;
 }
 .project__content__live a {
   color: #CC3355;
+}
+.project__content__live:hover {
+  background-color: #CC3355;
+  transition: all 1s, border-radius 2s 4s;
+}
+.project__content__live:hover a {
+  color: #FFFFFF;
 }
 .project__content__code {
   background-color: #CC3355;
@@ -184,9 +224,62 @@
 }
 
 .morse .project__content--morse {
-  background-image: url("assets/images/morse.png");
+  background-image: url("assets/images/morse.jpeg");
 }
 
+.tracker .project__content--tracker {
+  background-image: url("assets/images/ticketTracker.png");
+}
+
+@media only screen and (min-width: 900px) {
+  .title--work {
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: white;
+  }
+
+  .project {
+    display: none;
+  }
+
+  .featured {
+    display: none;
+  }
+
+  .projects {
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .projects .project1 {
+    border: 4px solid white;
+  }
+  .projects .project1__img {
+    background: url("assets/images/calc.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+  }
+  .projects .project1__content {
+    position: relative;
+    border: 1px solid red;
+    width: 700px;
+    height: 100%;
+  }
+  .projects .project1__content__featured {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .projects .project1__content__title {
+    position: absolute;
+    right: 0;
+  }
+  .projects .project1__content__text {
+    background-color: white;
+    width: 639px;
+    height: 100px;
+  }
+}
 #contact-section {
   scroll-snap-align: start;
   background-color: #000500;
