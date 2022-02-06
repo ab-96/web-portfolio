@@ -264,6 +264,12 @@ a {
 
     .hero {
 
+        .hero__container {
+            padding-left: 5rem;
+            max-width: 700px;
+            // border: 2px solid black;
+        }
+
 
         .hero__work {
             width: 400px;
