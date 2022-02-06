@@ -462,6 +462,10 @@ body {
   height: 100vh;
 }
 
+.container {
+  scroll-behavior: smooth;
+}
+
 #home-section {
   min-height: 100vh;
   background-color: #FFFFFF;
