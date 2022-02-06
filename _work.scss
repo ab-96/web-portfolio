@@ -4,7 +4,6 @@
 #section-work {
     display: flex;
     flex-direction: column;
-    // align-items: center;
     background-color: #333333;
     width: 100vw;
     min-height: 100%;
@@ -29,7 +28,6 @@
 
 .projects {
     display: none;
-
 }
 
 .featured {
@@ -53,25 +51,20 @@
     &__content {
         position: relative;
         display: flex;
-
-        // align-items: center;
-        // padding: 30px; 
         min-height: 270px;
         min-width: 300px;
-        // background: url("assets/images/calc.png") no-repeat center;
-        // background-size: cover;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
         &:hover {
 
             .project__content__title {
-               background-color: white;
-               color: black;
-               padding: 5px;
-               margin-bottom: 10px;
+                background-color: white;
+                color: black;
+                padding: 5px;
+                margin-bottom: 10px;
             }
 
-            .text-container {      
+            .text-container {
                 background-color: white;
                 padding: 10px;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -93,15 +86,11 @@
 
 
         &__title {
-            // position: absolute; //*
-            left: 30px; //*
-            // top: 70px;
+            left: 30px;
             margin-top: 20px;
             margin-right: 100px;
-
             font-size: 2rem;
             color: white;
-            // padding-bottom: 10px;
             z-index: 1;
             position: relative;
 
@@ -129,16 +118,9 @@
         padding: 30px;
         position: absolute;
         z-index: 2;
-        // position: absolute; //*
-        // left: 0; //*
-        // bottom: 80px;
         width: fit-content;
         opacity: 0.9;
         margin-bottom: 10px;
-        // background-color: white;
-        // padding: 10px;
-        // box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
 
         p {
             font-size: 1.2rem;
@@ -201,8 +183,6 @@
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     }
 
-
-
     &__techStack {
         font-size: 1.1rem;
         margin-top: 10px;
@@ -211,46 +191,18 @@
         color: white;
     }
 
-
-
-
-
-}
-
-.game {
-
-    .project__content--game {
-        background-image: url("assets/images/red.png");
+    .git1 {
+        font-size: 1.5rem;
     }
+
+
+
+
+
 }
-
-
-.punk {
-    .project__content--punk {
-        background-image: url("assets/images/bredog.jpeg");
-    }
-}
-
-.morse {
-
-    .project__content--morse {
-        background-image: url("assets/images/morse.jpeg");
-    }
-}
-
-
-.tracker {
-
-    .project__content--tracker {
-        background-image: url("assets/images/ticketTracker.png");
-    }
-}
-
 
 
 @media only screen and (min-width: 900px) {
-
-
 
     .title--work {
         margin-top: 3rem;
@@ -267,52 +219,169 @@
     }
 
     .projects {
+        display: block;
         margin-top: 5rem;
-        width: 100%;
-
+        display: flex;
+        justify-content: center;
 
         .project1 {
-            border: 4px solid white;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
 
             &__img {
-                background: url("assets/images/calc.png") no-repeat center;
-                background-size: cover;
+                position: relative;
                 height: 300px;
                 width: 500px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .live-btn {
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border: none;
+                cursor: pointer;
+                padding: 10px;
+                height: 40px;
+                width: 130px;
+                font-size: 1.2rem;
+                font-weight: 500;
+                letter-spacing: 1px;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+                // border-radius: 3px;
+
+                a {
+                    color: $primary-color;
+                }
+
+                &:hover {
+                    background-color: $primary-color;
+                    transition: all 1s, border-radius 2s 4s;
+
+                    a {
+                        color: white;
+                    }
+                }
+            }
+
+
+
+            &__img::before {
+                content: "";
+                background: rgba(204, 50, 85, 0.6);
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+
+            &__img:hover:before {
+                display: none;
             }
 
             &__content {
-                position: relative;
-                border: 1px solid red;
-                width: 700px;
-                height: 100%;
-
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 1rem;
+        
 
                 &__featured {
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-
+                    font-weight: 500;
+                    font-size: 1rem;
+                    color: $primary-color;
                 }
 
                 &__title {
-                    position: absolute;
-                    right: 0;
+                    color: white;
+                    font-size: 2rem;
                 }
 
                 &__text {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px;
                     background-color: white;
                     width: 639px;
                     height: 100px;
+                    font-size: 1rem;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+                }
+
+                &__teckStack {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding-left: 1rem;
+
+                    .teck-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        color: white;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .game {
+
+        .game1 {
+
+            &__img {
+
+            }
+
+            &__gameContent {
+                align-items: flex-start;
+       
+
+                .game1-teckStack {
+                 
+                    padding: 0;
+
+                    .game-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        color: white;
+                       
+                    }
+                }
+            }
+
+            .game1__img {
+
+
+                .game-btn {
+
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    right: 0;
 
                 }
 
             }
 
-
-
-
         }
+
     }
 
 }

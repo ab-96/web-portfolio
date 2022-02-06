@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="styles.css">
     <title>Built By Abz</title>
 </head>
@@ -46,12 +49,12 @@
                     <p class="text1">I'm a passionate junior <span id="red5">Software Engineer</span> based in London.
                         I enjoy designing and building interactive, engaging websites and applications.</p>
                     <p class="hero_info"></p>
-                    <a class="hero__work" href="#section-work">Check out my work!</a>
+                    <a class="hero__work animate__animated animate__bounce" href="#section-work">Check out my work!</a>
                 </div>
             </div>
         </header>
 
-      
+
 
 
 
@@ -68,23 +71,61 @@
 
         <!-- //desktop -->
         <div class="projects">
-            <div class="project1">
-                <div class="project1__img"></div>
+            <div class="project1">             
+                <div class="project1__img">    
+                    <img src="assets/images/calc.png" alt="">
+                    <button class="live-btn"><a href="https://ab-96.github.io/calculator/">Live
+                        Site</a></button>
+                </div>
                 <div class="project1__content">
                     <h3 class="project1__content__featured">Featured project</h3>
                     <h2 class="project1__content__title">Calculator</h2>
-                    <div class="project1__content__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est eum qui, suscipit repellat voluptatem nulla fugiat. Id, magni officiis.</div>
-                    <div class="project1-btns">
-                        <button>React</button>
+                    <div class="project1__content__text">This was my first challenge as part of the _nology course in
+                        which I was tasked to produce a
+                        simple calculator using vanilla JavaScript.</div>
+                    <div class="project1__content__teckStack">
+                        <div class="teck-wrapper">
+                            <p>HTML</p>
+                            <p>SASS</p>
+                            <p>JavaScript</p>
+                            <a href="https://github.com/ab-96/calculator"><i class="fab fa-github git1"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="projects game">
+            <div class="project1 game1">   
+                 
+                <div class="project1__content game1__gameContent ">
+                    <h3 class="project1__content__featured">Featured project</h3>
+                    <h2 class="project1__content__title">Rock-Paper-Scissors</h2>
+                    <div class="project1__content__text">A classic Rock, Paper, Scissors game made using Valina JavaScript. Try your luck againts the
+                        computer!</div>
+                    <div class="project1__content__teckStack game1-teckStack">
+                        <div class="teck-wrapper game-wrapper">
+                            <p>HTML</p>
+                            <p>SASS</p>
+                            <p>JavaScript</p>
+                            <a href="https://github.com/ab-96/Rock-Paper-Scissors"><i class="fab fa-github git1"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- //padding on img may cause issues -->
-        <!-- //button positioned relative on project contnent -> button absolute -->
-        <!-- mobile -->
+                <div class="project1__img game1__img">    
+                    <img src="assets/images/Janken-large.png" alt="">
+                    <button class="live-btn game-btn"><a href="https://ab-96.github.io/Rock-Paper-Scissors/">Live
+                        Site</a></button>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    
         <div class="featured">
             <h6>Featured Project</h6>
         </div>
@@ -94,9 +135,9 @@
                 <div>
                     <h3 class="project__content__title">Calculator</h3>
                     <div class="text-container">
-                        <p>This is my first challenge as part of the _nology course in which I was tasked to produce a
+                        <p>This was my first challenge as part of the _nology course in which I was tasked to produce a
                             simple calculator using vanilla JavaScript. </p>
-                    </div> 
+                    </div>
                 </div>
                 <button class="project__content__live"><a href="https://ab-96.github.io/calculator/">Live
                         Site</a></button>
@@ -105,7 +146,7 @@
                 <p>HTML</p>
                 <p>SASS</p>
                 <p>JavaScript</p>
-                <a href="https://github.com/ab-96/calculator"><i class="fab fa-github"></i></a></button></a>
+                <a href="https://github.com/ab-96/calculator"><i class="fab fa-github git1"></i></a>
             </div>
         </div>
 
@@ -142,7 +183,8 @@
                 <div>
                     <h3 class="project__content__title">Punk API</h3>
                     <div class="text-container">
-                        <p>A cool and fun project that displays beers from the Punk API. Search and filter through the app to find the beer you want!</p>
+                        <p>A cool and fun project that displays beers from the Punk API. Search and filter through the
+                            app to find the beer you want!</p>
                     </div>
                 </div>
                 <button class="project__content__live"><a href="https://ab-96.github.io/punk-api/">Live
@@ -165,7 +207,8 @@
                 <div>
                     <h3 class="project__content__title">Morse code Translator</h3>
                     <div class="text-container">
-                        <p>Made using JavaScript, type in any word and the application will translate it into Morse Code! Give it a try.</p>
+                        <p>Made using JavaScript, type in any word and the application will translate it into Morse
+                            Code! Give it a try.</p>
                     </div>
                 </div>
                 <button class="project__content__live"><a href="https://ab-96.github.io/morse-code-translator/">Live
@@ -188,7 +231,8 @@
                 <div>
                     <h3 class="project__content__title">Ticket Tracker</h3>
                     <div class="text-container">
-                        <p>A simple application that allows you to increment and decrement the count for each employee. </p>
+                        <p>A simple application that allows you to increment and decrement the count for each employee.
+                        </p>
                     </div>
                 </div>
                 <button class="project__content__live"><a href="https://ab-96.github.io/ticker-tracker/">Live
@@ -201,8 +245,8 @@
                 <a href="https://github.com/ab-96/ticker-tracker"><i class="fab fa-github"></i></a></button></a>
             </div>
         </div>
-        
-         
+
+
 
 
 
@@ -254,9 +298,9 @@
         </header>
 
         <section class="contact-paragraph">
-            <p> <a href="mailto:abdul.123@live.co.uk?"> 
-                Whether you have a question or just want to say hi, feel free to contact me at <span
-                    class="email">Abdul.123@live.co.uk</span> </a>
+            <p> <a href="mailto:abdul.123@live.co.uk?">
+                    Whether you have a question or just want to say hi, feel free to contact me at <span
+                        class="email">Abdul.123@live.co.uk</span> </a>
             </p>
         </section>
 
