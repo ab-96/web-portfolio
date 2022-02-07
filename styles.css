@@ -388,13 +388,6 @@
   margin-left: 2rem;
 }
 
-.contact-paragraph::before {
-  content: "het";
-  background-color: green;
-  width: 200px;
-  height: 10px;
-}
-
 .email {
   font-weight: 800;
   color: #CC3355;
@@ -594,6 +587,7 @@ a {
 
 .text1 {
   font-size: 1.4rem;
+  color: black;
 }
 
 .hero__work {
@@ -678,7 +672,7 @@ a {
     margin-top: 0;
   }
   .nav-link a {
-    color: #000500;
+    color: black;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1rem;
@@ -689,11 +683,19 @@ a {
   }
 
   .hero .hero__container {
+    margin: 50px auto;
     padding-left: 5rem;
     max-width: 700px;
   }
   .hero .hero__work {
-    width: 400px;
+    width: 300px;
+    text-transform: none;
+    background-color: white;
+    color: #CC3355;
+  }
+  .hero .hero__work:hover {
+    background-color: #CC3355;
+    color: white;
   }
 }
 
