@@ -61,7 +61,7 @@
   background-color: #333333;
   width: 100vw;
   min-height: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .header-work {
@@ -250,7 +250,6 @@
     position: relative;
     height: 300px;
     width: 500px;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .projects .project1__img img {
     height: 100%;
@@ -294,9 +293,10 @@
     right: 0;
     top: 0;
     bottom: 0;
+    transition: ease-in-out 180ms;
   }
   .projects .project1__img:hover:before {
-    display: none;
+    background: transparent;
   }
   .projects .project1__content {
     display: flex;
@@ -322,7 +322,7 @@
     width: 639px;
     height: 100px;
     font-size: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
   .projects .project1__content__teckStack {
     display: flex;
@@ -386,6 +386,13 @@
   font-size: 1.4rem;
   line-height: 2rem;
   margin-left: 2rem;
+}
+
+.contact-paragraph::before {
+  content: "het";
+  background-color: green;
+  width: 200px;
+  height: 10px;
 }
 
 .email {

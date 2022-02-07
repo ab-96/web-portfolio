@@ -36,6 +36,17 @@
     margin-left: 2rem;
 }
 
+
+.contact-paragraph::before {
+    content: "het";
+    background-color:  green;
+    width: 200px;
+    height: 10px;
+}
+
+
+
+
 .email {
     font-weight: 800;
     color: $primary-color;
