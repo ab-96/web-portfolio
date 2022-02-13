@@ -18,19 +18,14 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-
 }
 
 .container {
     scroll-behavior: smooth;
-
 }
 
 #home-section {
-    min-height: 100vh;
     background-color: $terniary-color;
-    // background-color: #333;
-
 }
 
 /* Navbar */
@@ -119,7 +114,6 @@ a {
     margin: 0 auto;
 
     .hero__container {
-      
         width: 90%;
         max-width: 900px;
         margin: 0 auto;
@@ -160,15 +154,11 @@ a {
 .hero_info {
     line-height: 1.5;
     color: black;
-
-
 }
 
 .text1 {
     font-size: 1.4rem;
     color: black;
-    
-
 }
 
 
@@ -203,8 +193,6 @@ a {
         font-size: 18px;
     }
 
- 
-
     .navbar {
         background: transparent;
     }
@@ -225,6 +213,8 @@ a {
     .nav-header>h2 {
         color: whitesmoke;
         padding: 20px;
+        display: flex;
+        align-items: center;
     }
 
 
@@ -260,15 +250,11 @@ a {
         margin-bottom: 0;
         margin-top: 0;
 
-
         a {
-            // color: $secondary-color;
             color: black;
             text-transform: uppercase;
             font-weight: 400;
             font-size: 1rem;
-
-
         }
 
         &:hover {
@@ -279,15 +265,14 @@ a {
         }
     }
 
+
     .hero {
 
         .hero__container {
-            margin: 50px auto;
-            // border: 2px solid red;
+            margin: 100px auto;
             padding-left: 5rem;
             max-width: 700px;
         }
-
 
         .hero__work {
             width: 300px;
@@ -300,11 +285,5 @@ a {
                 color: white;
             }
         }
-
     }
-
-
-
-
-
 }
