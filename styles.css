@@ -1,8 +1,8 @@
 #skills-section {
-  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #CC3355;
-  width: 100vw;
-  height: 100vh;
 }
 
 .skills-header {
@@ -20,10 +20,12 @@
 }
 
 .skills-paragraph {
-  margin-top: 5rem;
+  width: 90%;
+  max-width: 700px;
   padding: 3rem;
   color: white;
-  font-size: 1.2rem;
+}
+.skills-paragraph p {
   text-align: center;
   font-size: 1.3rem;
 }
@@ -33,6 +35,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 150px 150px;
   font-size: 2rem;
+  gap: 2rem;
 }
 
 .skill-icon {
@@ -51,7 +54,7 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 200px;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
     font-size: 2.5rem;
   }
 }
@@ -357,35 +360,38 @@
   }
 }
 #contact-section {
-  scroll-snap-align: start;
-  background-color: #000500;
+  background-color: #333333;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   width: 100vw;
-  height: 50vh;
+  height: 50%;
 }
 
 .contact-header {
   margin-top: 3rem;
-  margin-left: 2rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   color: whitesmoke;
   text-transform: uppercase;
 }
 
 .contact-header__title {
+  text-align: center;
   text-transform: uppercase;
   font-size: 3rem;
 }
 
 .contact-paragraph {
-  max-width: 1100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 700px;
   color: white;
   font-size: 1.4rem;
   line-height: 2rem;
-  margin-left: 2rem;
 }
 
 .email {
@@ -401,6 +407,7 @@
   padding-bottom: 20px;
   background-color: #CC3355;
   height: 100px;
+  width: 100%;
   color: white;
   padding: 0 10px;
 }
@@ -444,6 +451,11 @@
 @media only screen and (min-width: 900px) {
   html {
     font-size: 18px;
+  }
+
+  .contact-header__title {
+    text-transform: uppercase;
+    font-size: 3rem;
   }
 }
 * {
@@ -698,3 +710,5 @@ a {
     color: white;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */

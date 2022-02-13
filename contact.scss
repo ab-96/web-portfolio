@@ -3,47 +3,41 @@
 
 
 #contact-section {
-    scroll-snap-align: start;
-    background-color: $secondary-color;
+    // background-color: $secondary-color;
+    background-color: #333333;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 50vh;
-
+    height: 50%;
 }
 
 .contact-header {
     margin-top: 3rem;
-    margin-left: 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     color: whitesmoke;
     text-transform: uppercase;
 }
 
 .contact-header__title {
+    text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
 }
 
 
 .contact-paragraph {
-    max-width: 1100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 700px;
     color: white;
     font-size: 1.4rem;
     line-height: 2rem;
-    margin-left: 2rem;
 }
-
-
-// .contact-paragraph::before {
-//     content: "het";
-//     background-color:  green;
-//     width: 200px;
-//     height: 10px;
-// }
-
 
 
 
@@ -59,7 +53,9 @@
     align-items: center;
     padding-bottom: 20px;
     background-color: $primary-color;
+    // background-color: #333333;
     height: 100px;
+    width: 100%;
     color: white;
     padding: 0 10px;
 
@@ -81,7 +77,6 @@
             font-size: 1.1rem;
         }
 
-
         .footer__icons {
             display: flex;
             align-items: center;
@@ -89,7 +84,7 @@
 
             .footer__title {
                 font-size: 1.1rem;
-                font-weight: 500;   
+                font-weight: 500;
             }
 
             .fab {
@@ -102,26 +97,11 @@
 
                 &:hover {
                     color: $primary-color;
-                 
                 }
             }
-
         }
-
-
     }
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -129,5 +109,8 @@
     html {
         font-size: 18px
     }
-
+    .contact-header__title {
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
 }
