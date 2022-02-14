@@ -36,7 +36,7 @@ body {
     .navbar__container {
         max-width: 1100px;
         margin: 0 auto;
-        padding: 20px 40px;
+        padding: 20px 28px;
     }
 
     .nav-header {
@@ -76,7 +76,7 @@ a {
 }
 
 .nav-toggle {
-    margin-top: 10px;
+    margin-right: 10px;
     border: transparent;
     background: transparent;
     color: #F8F8F8;
@@ -98,28 +98,29 @@ a {
         font-size: 1.3rem;
         text-transform: none;
         font-weight: 500;
-
     }
 }
 
 .nav-open {
     height: 100%;
     width: 100%;
-
 }
 
 .hero {
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
     margin: 0 auto;
 
     .hero__container {
+        // border: 2px solid black;
         width: 90%;
+        padding: 10px;
         max-width: 900px;
         margin: 0 auto;
         display: flex;
         align-items: center;
-        padding: 100px 0;
+        // padding: 100px 0;
+        padding: 100px 10px;
         justify-content: center;
     }
 }
@@ -127,9 +128,8 @@ a {
 
 .hero__title {
     margin-bottom: 1.5rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: black;
-
 }
 
 #red5 {
@@ -139,13 +139,12 @@ a {
 
 
 
-
 #red-hero {
     color: $primary-color;
 }
 
 .hero__second {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: $secondary-color;
     margin-bottom: 1rem;
 }
@@ -157,7 +156,7 @@ a {
 }
 
 .text1 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: black;
 }
 
@@ -193,6 +192,8 @@ a {
         font-size: 18px;
     }
 
+
+
     .navbar {
         background: transparent;
     }
@@ -213,8 +214,6 @@ a {
     .nav-header>h2 {
         color: whitesmoke;
         padding: 20px;
-        display: flex;
-        align-items: center;
     }
 
 
@@ -250,11 +249,15 @@ a {
         margin-bottom: 0;
         margin-top: 0;
 
+
         a {
+            // color: $secondary-color;
             color: black;
             text-transform: uppercase;
             font-weight: 400;
             font-size: 1rem;
+
+
         }
 
         &:hover {
@@ -265,13 +268,17 @@ a {
         }
     }
 
-
     .hero {
 
         .hero__container {
             margin: 100px auto;
             padding-left: 5rem;
             max-width: 700px;
+        }
+
+
+        .hero__title {
+            font-size: 3.5rem;
         }
 
         .hero__work {
@@ -285,5 +292,11 @@ a {
                 color: white;
             }
         }
+
     }
+
+
+
+
+
 }

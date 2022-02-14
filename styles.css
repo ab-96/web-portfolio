@@ -16,7 +16,7 @@
 .title--skills {
   margin-top: 3rem;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .skills-paragraph {
@@ -76,7 +76,7 @@
 .title--work {
   padding-left: 30px;
   margin-top: 3rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   color: white;
 }
@@ -266,7 +266,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: #CC3355;
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -278,14 +278,14 @@
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   }
   .projects .project1 .live-btn a {
-    color: #CC3355;
+    color: white;
   }
   .projects .project1 .live-btn:hover {
-    background-color: #CC3355;
-    transition: all 1s, border-radius 2s 4s;
+    background-color: white;
+    transition: all 1s, border-radius 2s 3s;
   }
   .projects .project1 .live-btn:hover a {
-    color: white;
+    color: #CC3355;
   }
   .projects .project1__img::before {
     content: "";
@@ -380,7 +380,7 @@
 .contact-header__title {
   text-align: center;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .contact-paragraph {
@@ -489,7 +489,7 @@ body {
 .navbar .navbar__container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 28px;
 }
 .navbar .nav-header {
   display: flex;
@@ -525,7 +525,7 @@ a {
 }
 
 .nav-toggle {
-  margin-top: 10px;
+  margin-right: 10px;
   border: transparent;
   background: transparent;
   color: #F8F8F8;
@@ -555,23 +555,23 @@ a {
 }
 
 .hero {
-  height: 100vh;
   width: 100%;
   margin: 0 auto;
 }
 .hero .hero__container {
   width: 90%;
+  padding: 10px;
   max-width: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding: 100px 0;
+  padding: 100px 10px;
   justify-content: center;
 }
 
 .hero__title {
   margin-bottom: 1.5rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: black;
 }
 
@@ -585,7 +585,7 @@ a {
 }
 
 .hero__second {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #000500;
   margin-bottom: 1rem;
 }
@@ -596,7 +596,7 @@ a {
 }
 
 .text1 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: black;
 }
 
@@ -647,8 +647,6 @@ a {
   .nav-header > h2 {
     color: whitesmoke;
     padding: 20px;
-    display: flex;
-    align-items: center;
   }
 
   .nav-toggle {
@@ -698,6 +696,9 @@ a {
     margin: 100px auto;
     padding-left: 5rem;
     max-width: 700px;
+  }
+  .hero .hero__title {
+    font-size: 3.5rem;
   }
   .hero .hero__work {
     width: 300px;
